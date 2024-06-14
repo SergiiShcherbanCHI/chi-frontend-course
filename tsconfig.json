@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "outDir": "TypeScript/dist",
+    "rootDir": "TypeScript/src",
+    "strict": true,
+    "target": "ES6",
+    "module": "commonjs"
+  }
+}

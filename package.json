@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "typescript": "^5.4.5"
+  },
+  "name": "chi-frontend-course",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SergiiShcherbanCHI/chi-frontend-course.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SergiiShcherbanCHI/chi-frontend-course/issues"
+  },
+  "homepage": "https://github.com/SergiiShcherbanCHI/chi-frontend-course#readme",
+  "description": ""
+}
