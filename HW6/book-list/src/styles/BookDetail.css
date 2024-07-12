@@ -1,0 +1,24 @@
+.book-detail {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.book-detail h1 {
+    text-align: center;
+}
+
+.book-detail p {
+    margin: 10px 0;
+}
+
+.book-detail a {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.book-detail a:hover {
+    text-decoration: underline;
+}

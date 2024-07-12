@@ -1,0 +1,29 @@
+.book-list {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.book-list h1 {
+    text-align: center;
+}
+
+.book-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.book-list li {
+    margin: 10px 0;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.book-list a {
+    text-decoration: none;
+    color: #333;
+}
+
+.book-list a:hover {
+    text-decoration: underline;
+}
