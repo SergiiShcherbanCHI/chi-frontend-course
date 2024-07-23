@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
+import { Container, Grid, Typography, Box, Button } from '@mui/material';
 import '../styles/BookDetail.css';
 
 const books = [
@@ -15,20 +16,43 @@ const BookDetail = () => {
     const book = books.find(book => book.id === parseInt(id));
 
     if (!book) {
-        return <div>Book not found</div>;
+        return <Typography variant="h6">Book not found</Typography>;
     }
 
     return (
-        <div className="book-detail">
-            <h1>{book.name}</h1>
-            <p>Author: {book.author}</p>
-            <p>Genre: {book.genre}</p>
-            <p>Rating: {book.rating}</p>
-            <p>Description: {book.description}</p>
-            <img src="https://via.placeholder.com/150" alt="Book cover" />
-            <br />
-            <Link to="/">Back to Book List</Link>
-        </div>
+        <Container maxWidth="md" sx={{ marginTop: '20px' }}>
+            <Box sx={{ mb: 2 }}>
+                <Typography variant="h4" align={"center"}>
+                    {book.name}
+                </Typography>
+            </Box>
+            <Grid container spacing={2}>
+                <Grid item xs={12} sx={{ textAlign: 'center' }}>
+                    <img src="https://via.placeholder.com/150" alt="Book cover" style={{ maxWidth: '100%', height: 'auto' }} />
+                </Grid>
+                <Grid item xs={12} sm={6} md={4}>
+                    <Typography variant="h6">Author:</Typography>
+                    <Typography variant="body1">{book.author}</Typography>
+                </Grid>
+                <Grid item xs={12} sm={6} md={4}>
+                    <Typography variant="h6">Genre:</Typography>
+                    <Typography variant="body1">{book.genre}</Typography>
+                </Grid>
+                <Grid item xs={12} sm={6} md={4}>
+                    <Typography variant="h6">Rating:</Typography>
+                    <Typography variant="body1">{book.rating}</Typography>
+                </Grid>
+                <Grid item xs={12}>
+                    <Typography variant="h6">Description:</Typography>
+                    <Typography variant="body1">{book.description}</Typography>
+                </Grid>
+                <Grid item xs={12} sx={{ textAlign: 'center', marginTop: '20px' }}>
+                    <Button variant="contained" color="primary" component={Link} to="/">
+                        Back to Book List
+                    </Button>
+                </Grid>
+            </Grid>
+        </Container>
     );
 };
 
